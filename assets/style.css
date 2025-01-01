@@ -1,3 +1,14 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
 
 .navbar-brand img {
     height: 35px;
@@ -16,28 +27,33 @@
 
 .image-dots1 {
     position: absolute;
-    width: 1150px; /* Lebar lebih besar untuk efek tumpukan */
-    height: 550px; /* Tinggi yang proporsional */
-    border-top: 5px solid #E0E0E0; /* Garis utama lebih tebal */
-    border-radius: 575px 575px 0 0; /* Sesuaikan radius agar proporsional */
-    top: 50%; /* Posisikan di tengah */
+    width: 1150px;
+    /* Lebar lebih besar untuk efek tumpukan */
+    height: 550px;
+    /* Tinggi yang proporsional */
+    border-top: 5px solid #E0E0E0;
+    /* Garis utama lebih tebal */
+    border-radius: 575px 575px 0 0;
+    /* Sesuaikan radius agar proporsional */
+    top: 50%;
+    /* Posisikan di tengah */
     transform: translateY(-50%);
 }
 
 .image-dots {
     position: absolute;
-    width: 1050px; /* Lebar sedikit lebih kecil */
-    height: 500px; /* Tinggi yang proporsional */
-    border-top: 5px solid #E0E0E0; /* Garis utama lebih tebal */
-    border-radius: 575px 575px 0 0; /* Sesuaikan radius agar proporsional */
-    top: 50%; /* Posisikan di tengah */
+    width: 1050px;
+    /* Lebar sedikit lebih kecil */
+    height: 500px;
+    /* Tinggi yang proporsional */
+    border-top: 5px solid #E0E0E0;
+    /* Garis utama lebih tebal */
+    border-radius: 575px 575px 0 0;
+    /* Sesuaikan radius agar proporsional */
+    top: 50%;
+    /* Posisikan di tengah */
     transform: translateY(-50%);
 }
-
-
-
-
-
 
 
 
@@ -72,11 +88,31 @@
 }
 
 /* Position each image along the semi-circle */
-.image-1 { top: 0; left: 50%; transform: translateX(-50%); }
-.image-2 { top: 15%; right: 20%; }
-.image-3 { top: 50%; right: 7%; }
-.image-4 { top: 50%; left: 7%; }
-.image-5 { top: 15%; left: 20%; }
+.image-1 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image-2 {
+    top: 15%;
+    right: 20%;
+}
+
+.image-3 {
+    top: 50%;
+    right: 7%;
+}
+
+.image-4 {
+    top: 50%;
+    left: 7%;
+}
+
+.image-5 {
+    top: 15%;
+    left: 20%;
+}
 
 .center-content {
     text-align: center;
@@ -137,4 +173,107 @@
 
 .btn-action img {
     margin-left: 8px;
+}
+
+
+/* footer */
+footer {
+    background-color: #000000;
+}
+
+footer .container .row .first-col .image-content h4.title {
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+}
+
+footer .container .row .first-col p.subtitle {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    opacity: 80%;
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.5;
+    width: 80%;
+}
+
+footer .container .first-col .social-media-group .row .col-lg-2 a.svg-link {
+    text-decoration: none;
+    background-color: #FFFFFF12;
+    padding: 8px 8px 10px 8px;
+    border-radius: 100%;
+    display: inline-flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+footer .container .first-col .social-media-group .row .col-lg-2 a.svg-link:hover {
+    transform: translateY(-10px);
+}
+
+footer .container .first-col .social-media-group .row .col-lg-2 a.svg-link .responsive-img {
+    width: 24px;
+    height: 24px;
+}
+
+footer .container .two-col h4.title,
+footer .container .three-col h4.title,
+footer .container .four-col h4.title,
+footer .container .five-col h4.title {
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+footer .container .two-col .content p,
+footer .container .three-col .content p,
+footer .container .four-col .content p,
+footer .container .five-col .content p {
+    color: #fff;
+    opacity: 80%;
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+}
+
+.custom-hr {
+    border: none;
+    border-top: 2px solid #FFF;
+    opacity: 20%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+
+footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+footer .container .copyright p {
+    color: #fff;
+    opacity: 80%;
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+}
+
+footer .container .copyright p span {
+    color: #2C9C7D;
+}
+
+footer .container .copyright .href-group a {
+    text-decoration: none;
+    color: #CFD0D5;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .container .copyright .href-group a:hover {
+    text-decoration: underline;
+    color: #2196F3;
 }
