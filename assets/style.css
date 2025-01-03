@@ -61,29 +61,7 @@
   transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .navbar-nav {
-    padding: auto;
-    margin: auto;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
 
-  .navbar-collapse {
-    text-align: center;
-  }
-
-  .btn-outline-success {
-    margin-top: 10px;
-  }
-
-  .image-dots1,
-  .image-dots {
-    display: none;
-  }
-
-}
 
 /* end navbar */
 
@@ -315,64 +293,6 @@
   margin-left: 8px;
 }
 
-@media (max-width: 768px) {
-  .home {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .image-dots,
-  .image-dots1,
-  .image-point {
-    display: none;
-  }
-
-  .center-content {
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 90%;
-  }
-
-  .hashtag {
-    font-size: 12px;
-    margin-bottom: 10px;
-  }
-
-  .main-heading {
-    font-size: 1rem;
-    line-height: 1.4;
-    margin-bottom: 15px;
-  }
-
-  .main-heading .animate-text {
-    display: inline-block;
-    position: relative;
-    width: 70px;
-    height: 1.4rem;
-    overflow: hidden;
-    vertical-align: bottom;
-  }
-
-
-  .description {
-
-    font-size: 13.6px;
-    margin-bottom: 20px;
-  }
-
-  .action-buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .btn-action,
-  .btn-action1 {
-    width: 100%;
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-}
 
 /* end home */
 
@@ -536,15 +456,7 @@
   transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-  .card {
-    height: 350px;
-  }
 
-  .card-img {
-    height: 350px;
-  }
-}
 
 /* end wisata */
 
@@ -599,21 +511,7 @@
   line-height: 1;
 }
 
-@media (max-width: 768px) {
-  .title-wisata {
-    font-size: 1.5rem;
 
-  }
-
-  .header-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .header-section>div {
-    margin-bottom: 1rem;
-  }
-}
 
 /* end jadwal */
 
@@ -916,7 +814,110 @@ footer .container .copyright .href-group a:hover {
   color: var(--primary-color);
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
+@media (max-width: 768px) {
+  /* navbar */
+  .navbar-nav {
+    padding: auto;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .btn-outline-success {
+    margin-top: 10px;
+  }
+  /* end navbar */
+
+  /* home */
+  .home {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .image-dots,
+  .image-dots1,
+  .image-point {
+    display: none;
+  }
+
+  .center-content {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .hashtag {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .main-heading {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .main-heading .animate-text {
+    display: inline-block;
+    position: relative;
+    width: 70px;
+    height: 1.4rem;
+    overflow: hidden;
+    vertical-align: bottom;
+  }
+
+
+  .description {
+
+    font-size: 13.6px;
+    margin-bottom: 20px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-action,
+  .btn-action1 {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  /* end home */
+
+  /* card */
+  .card {
+    height: 350px;
+  }
+
+  .card-img {
+    height: 350px;
+  }
+  /* end card */
+
+  /* all */
+  .title-wisata {
+    font-size: 1.5rem;
+
+  }
+
+  .header-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-section>div {
+    margin-bottom: 1rem;
+  }
+  /* end all */
+}
 @media screen and (min-width: 1400px) {
 
   /*  untuk display 1400 ke atas */
