@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <style>
+        * {
+            border: 1px solid red;
+font-family: "Manrope", sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+--primary-color: #2c9c7d;
+--white-color: #ffffff;
+--black-color: #000000;
+--stroke: #666;
+}
+
+/* navbar */
+.navbar-brand img {
+height: auto;
+max-height: 30px;
+}
+
+.navbar {
+transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+background-color: rgba(255, 255, 255, 0.9);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+}
+
+.navbar-nav .nav-link {
+transition: color 0.3s ease, border-bottom 0.3s ease;
+color: #000;
+text-decoration: none;
+border-bottom: 2px solid transparent;
+}
+
+.navbar-nav .nav-link:hover {
+color: var(--primary-color);
+border-bottom: 2px solid var(--primary-color);
+}
+
+.navbar-nav {
+margin-left: 20rem;
+}
+
+.btn-sign {
+color: var(--primary-color);
+margin-left: auto;
+border-radius: 100px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-sign:hover {
+background-color: var(--primary-color);
+color: var(--white-color);
+margin-left: auto;
+border-radius: 100px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transition: all 0.3s ease;
+}
+
+
+
+/* end navbar */
+
+/* home */
+.home {
+margin-bottom: 20px;
+margin-top: 60px;
+}
+
+.semi-circle-container {
+padding: 5%;
+position: relative;
+height: 80vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.image-dots1 {
+position: absolute;
+width: 1150px;
+height: 550px;
+border-top: 5px solid #e0e0e0;
+border-radius: 575px 575px 0 0;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.image-dots {
+position: absolute;
+width: 1050px;
+height: 500px;
+border-top: 5px solid #e0e0e0;
+border-radius: 575px 575px 0 0;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.image-point {
+position: absolute;
+width: 100px;
+height: 100px;
+border-radius: 12px;
+overflow: hidden;
+transition: all 0.3s ease;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-point img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.point-label {
+position: absolute;
+width: 30px;
+height: 30px;
+background: #2196f3;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-weight: bold;
+top: -15px;
+right: -15px;
+}
+
+.image-1 {
+top: -5%;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.image-2 {
+top: 15%;
+right: 20%;
+}
+
+.image-3 {
+top: 50%;
+right: 7%;
+}
+
+.image-4 {
+top: 50%;
+left: 7%;
+}
+
+.image-5 {
+top: 15%;
+left: 20%;
+}
+
+.center-content {
+text-align: center;
+max-width: 700px;
+margin-top: 50px;
+z-index: 2;
+}
+
+.hashtag {
+color: #333;
+margin-bottom: 20px;
+}
+
+.hashtag span {
+color: var(--primary-color);
+}
+
+.main-heading {
+font-size: 3.2rem;
+font-weight: bold;
+line-height: 1.2;
+margin-bottom: 20px;
+}
+
+
+.baturraden-text {
+color: var(--primary-color);
+}
+
+.animate-text {
+color: var(--primary-color);
+}
+
+.main-heading .animate-text {
+display: inline-block;
+position: relative;
+width: 226px;
+height: 3.9rem;
+overflow: hidden;
+vertical-align: bottom;
+}
+
+/* Teks animasi */
+.main-heading .animate-text span {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+text-align: left;
+font-size: inherit;
+font-weight: inherit;
+display: none;
+}
+
+.main-heading .animate-text span {
+font-size: inherit;
+color: inherit;
+font-weight: inherit;
+display: none;
+}
+
+.main-heading .animate-text span.text-in {
+display: inline-block;
+animation: textIn 0.5s ease;
+}
+
+.main-heading .animate-text span.text-out {
+animation: textOut 0.5s ease;
+}
+
+/* Keyframes */
+@keyframes textIn {
+0% {
+  transform: translateY(100%);
+}
+
+100% {
+  transform: translateY(0%);
+}
+}
+
+@keyframes textOut {
+0% {
+  transform: translateY(0%);
+}
+
+100% {
+  transform: translateY(-100%);
+}
+}
+
+
+.description {
+color: #666;
+font-size: 1.1rem;
+margin-bottom: 30px;
+}
+
+.action-buttons {
+display: flex;
+gap: 15px;
+justify-content: center;
+}
+
+.btn-action {
+padding: 10px 25px;
+border-radius: 100px;
+background-color: var(--primary-color);
+color: var(--white-color);
+border: none;
+transition: all 0.3s ease;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-action1 {
+padding: 10px 25px;
+border-radius: 100px;
+background-color: var(--white-color);
+color: var(--black-color);
+transition: all 0.3s ease;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-action1:hover {
+background-color: var(--primary-color);
+transform: translateY(-2px);
+color: white;
+}
+
+.btn-action:hover {
+transform: translateY(-2px);
+}
+
+.btn-action img {
+margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+.home{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* navbar */
+.navbar-nav {
+  padding: auto;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.btn-outline-success {
+  margin-top: 10px;
+}
+
+/* end navbar */
+
+/* home */
+.home {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.image-dots,
+.image-dots1,
+.image-point {
+  display: none;
+}
+
+.center-content {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 90%;
+}
+
+.hashtag {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.main-heading .animate-text {
+  display: inline-block;
+  position: relative;
+  width: 80.4px;
+  height: 1.6rem;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+
+.description {
+  font-size: 13.6px;
+  margin-bottom: 20px;
+}
+
+.action-buttons {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-action,
+.btn-action1 {
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+}
+/* end home */
+
+/* end home */
+    </style>
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+          <div class="container d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+              <img src="assets/image/logo-baturaden.png" alt="Baturraden" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#wisata">Wisata</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#penginapan">Penginapan</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#costumer-services">Bantuan</a>
+                </li>
+              </ul>
+              <a class="btn ms-auto btn-sign" href="#">
+                Sign Up
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <section class="home" id="home">
+        <div class="container">
+          <div class="semi-circle-container">
+            <div class="image-dots"></div>
+            <div class="image-dots1"></div>
+            <!-- Image points -->
+            <div class="image-point image-1">
+              <img src="assets/image/circle-image-3.png" alt="Nature 1" />
+            </div>
+            <div class="image-point image-2">
+              <img src="assets/image/circle-image-4.png" alt="Nature 2" />
+            </div>
+            <div class="image-point image-3">
+              <img src="assets/image/circle-image-5.png" alt="Nature 3" />
+            </div>
+            <div class="image-point image-4">
+              <img src="assets/image/circle-image-1.png" alt="Nature 4" />
+            </div>
+            <div class="image-point image-5">
+              <img src="assets/image/circle-image-2.png" alt="Nature 5" />
+            </div>
+  
+            <!-- Center content -->
+            <div class="center-content">
+              <p class="hashtag">
+                ✨ Yuk Mulai <span>#JelajahBaturraden</span> Sekarang!
+              </p>
+              <h1 class="main-heading">
+                Butuh Tempat
+                <span class="animate-text">
+                  <span>Healing?</span>
+                  <span>Santai?</span>
+                  <span>Wisata?</span> </span><br />
+                Yuk Ke <span class="baturraden-text">Baturraden!</span>
+              </h1>
+              <p class="description">
+                Di Baturraden menyediakan banyak objek wisata yang pastinya seru
+                seru loh!<br />
+                Baturraden juga selalu siap buat temenin kamu dikala bosan!
+              </p>
+              <div class="action-buttons">
+                <button class="btn btn-action1">Peta Wisata Baturraden</button>
+                <button class="btn btn-action">
+                  Booking Tiket
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+<script src="assets/script.js"></script>
+</html>

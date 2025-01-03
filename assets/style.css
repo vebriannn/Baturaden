@@ -1,5 +1,5 @@
 * {
-
+  /* border: 1px solid red; */
   font-family: "Manrope", sans-serif;
   margin: 0;
   padding: 0;
@@ -67,7 +67,6 @@
 
 /* home */
 .home {
-  margin-bottom: 20px;
   margin-top: 60px;
 }
 
@@ -463,7 +462,7 @@
 
 /* jadwal */
 .pricing-card {
-  font-size: 13;
+  font-size: 13px;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   background: white;
@@ -499,7 +498,6 @@
 .custom-list li {
   position: relative;
   padding-left: 20px;
-  margin-bottom: 1rem;
 }
 
 .custom-list li::before {
@@ -886,6 +884,15 @@ footer .container .copyright .href-group a:hover {
     gap: 10px;
   }
 
+  .semi-circle-container {
+    padding: 0; 
+    position: static; 
+    height: auto; 
+    display: block; 
+    justify-content: unset; 
+    align-items: unset; 
+  }
+
   .navbar-collapse {
     text-align: center;
   }
@@ -897,11 +904,6 @@ footer .container .copyright .href-group a:hover {
   /* end navbar */
 
   /* home */
-  .home {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
   .image-dots,
   .image-dots1,
   .image-point {
@@ -921,7 +923,7 @@ footer .container .copyright .href-group a:hover {
   }
 
   .main-heading {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     margin-bottom: 15px;
   }
@@ -929,15 +931,14 @@ footer .container .copyright .href-group a:hover {
   .main-heading .animate-text {
     display: inline-block;
     position: relative;
-    width: 70px;
-    height: 1.4rem;
+    width: 110px;
+    height: 2.1rem;
     overflow: hidden;
     vertical-align: bottom;
   }
 
-
+  
   .description {
-
     font-size: 13.6px;
     margin-bottom: 20px;
   }
@@ -949,7 +950,8 @@ footer .container .copyright .href-group a:hover {
 
   .btn-action,
   .btn-action1 {
-    width: 100%;
+    margin: auto;
+    width: 80%;
     font-size: 1rem;
     padding: 10px 20px;
   }
@@ -959,6 +961,13 @@ footer .container .copyright .href-group a:hover {
   /* card */
   .card {
     height: 350px;
+    width: 90%;
+  }
+  .card-title{
+    font-size: 1.1rem;
+  }
+  .card-description span{
+    font-size:11px;
   }
 
   .card-img {
@@ -967,20 +976,30 @@ footer .container .copyright .href-group a:hover {
 
   /* end card */
 
+  /* jadwal */
+
+  .operational-hours h5{
+    font-size: 15px;
+  }
+  .operational-hours h4{
+    font-size: 13px;
+  }
+
+  .pricing-card h5{
+    font-size: 0.9rem;
+  }
+  .pricing-card ,.custom-list li{
+    font-size: 0.7rem;
+  }
+  /* end jadwal */
   /* all */
   .title-wisata {
-    font-size: 1.5rem;
-
+    font-size: 1.2rem;
   }
 
-  .header-section {
-    flex-direction: column;
-    text-align: center;
-  }
+ 
 
-  .header-section>div {
-    margin-bottom: 1rem;
-  }
+  
 
   #end-section .container .flex-box .row .col-lg-5 img:first-child {
     display: none;
@@ -1034,14 +1053,14 @@ footer .container .copyright .href-group a:hover {
     color: #000;
     font-weight: bold;
     font-family: 'Manrope', sans-serif;
-    font-size: 28px;
+    font-size: 1.2rem;
   }
 
   #costumer-services .container .row .col-lg-6 .title {
     font-weight: bold;
     color: #000;
     font-family: 'Manrope', sans-serif;
-    font-size: 28px;
+    font-size: 1.2rem;
   }
 
   #costumer-services .container .row .col-lg-6 img {
@@ -1086,7 +1105,7 @@ footer .container .copyright .href-group a:hover {
     font-weight: bold;
     color: #000;
     font-family: 'Manrope', sans-serif;
-    font-size: 34px;
+    font-size: 1.2rem;
   }
 
   #costumer-services .container .row .col-lg-6 .message-group img,
