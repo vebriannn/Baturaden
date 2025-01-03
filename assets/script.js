@@ -36,3 +36,23 @@ document.addEventListener("scroll", function () {
     navbar.classList.remove("scrolled");
   }
 });
+
+// Back to top button
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 300) {
+    $(".back-to-top").fadeIn("slow");
+  } else {
+    $(".back-to-top").fadeOut("slow");
+  }
+});
+
+// Automatically scroll to top when the button is clicked
+$(".back-to-top").click(function () {
+  $("html, body").animate({ scrollTop: 0 }, 0, "easeInOutExpo");
+  return false;
+});
+
+// Automatically click the button once (scroll to top)
+$(document).ready(function () {
+  $(".back-to-top").trigger("click");
+});

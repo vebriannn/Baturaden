@@ -381,7 +381,8 @@
   font-size: 2.2rem;
 
   text-align: center;
-  padding: 40px 0;
+  padding-top: 100px;
+  padding-bottom: 10px;
   animation: fadeIn 1s ease-in;
 }
 
@@ -407,7 +408,7 @@
   border-radius: 15px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
-  height: 500px;
+  height: 450px;
   background-color: #e7e7e7;
 }
 
@@ -898,6 +899,23 @@ footer .container .copyright .href-group a:hover {
   color: #2196F3;
 }
 
+/* back to top */
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+}
+.btn-up{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.btn-up:hover{
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
 @media screen and (min-width: 1400px) {
 

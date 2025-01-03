@@ -1,435 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Baturraden</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/style.css" />
-    <link rel="icon" type="image/png" href="assets/image/icon-baturaden.png">
-</head>
+    <link rel="icon" type="image/png" href="assets/image/icon-baturaden.png" />
+  </head>
 
-<body>
+  <body>
     <!-- Header Section -->
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-            <div class="container d-flex align-items-center">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/image/logo-baturaden.png" alt="Baturraden" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#wisata">Wisata</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#penginapan">Penginapan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Bantuan</a>
-                        </li>
-                    </ul>
-                    <a class="btn ms-auto btn-sign" href="#">
-                        Sign Up
-                        <i class="bi bi-arrow-up-right"></i>
-                    </a>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container d-flex align-items-center">
+          <a class="navbar-brand" href="#">
+            <img src="assets/image/logo-baturaden.png" alt="Baturraden" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#wisata">Wisata</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#penginapan">Penginapan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#costumer-services">Bantuan</a>
+              </li>
+            </ul>
+            <a class="btn ms-auto btn-sign" href="#">
+              Sign Up
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Home Section -->
-        <section class="home" id="home">
-            <div class="container">
-                <div class="semi-circle-container">
-                    <div class="image-dots"></div>
-                    <div class="image-dots1"></div>
-                    <!-- Image points -->
-                    <div class="image-point image-1">
-                        <img src="/assets/image/circle-image-3.png" alt="Nature 1" />
-                    </div>
-                    <div class="image-point image-2">
-                        <img src="/assets/image/circle-image-4.png" alt="Nature 2" />
-                    </div>
-                    <div class="image-point image-3">
-                        <img src="/assets/image/circle-image-5.png" alt="Nature 3" />
-                    </div>
-                    <div class="image-point image-4">
-                        <img src="/assets/image/circle-image-1.png" alt="Nature 4" />
-                    </div>
-                    <div class="image-point image-5">
-                        <img src="/assets/image/circle-image-2.png" alt="Nature 5" />
-                    </div>
-
-                    <!-- Center content -->
-                    <div class="center-content">
-                        <p class="hashtag">
-                            ✨ Yuk Mulai <span>#JelajahBaturraden</span> Sekarang!
-                        </p>
-                        <h1 class="main-heading">
-                            Butuh Tempat
-                            <span class="animate-text">
-                                <span>Healing?</span>
-                                <span>Santai?</span>
-                                <span>Wisata?</span> </span><br />
-                            Yuk Ke <span class="baturraden-text">Baturraden!</span>
-                        </h1>
-                        <p class="description">
-                            Di Baturraden menyediakan banyak objek wisata yang pastinya seru
-                            seru loh!<br />
-                            Baturraden juga selalu siap buat temenin kamu dikala bosan!
-                        </p>
-                        <div class="action-buttons">
-                            <button class="btn btn-action1">Peta Wisata Baturraden</button>
-                            <button class="btn btn-action">
-                                Booking Tiket
-                                <i class="bi bi-arrow-up-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+      <!-- Home Section -->
+      <section class="home" id="home">
+        <div class="container">
+          <div class="semi-circle-container">
+            <div class="image-dots"></div>
+            <div class="image-dots1"></div>
+            <!-- Image points -->
+            <div class="image-point image-1">
+              <img src="/assets/image/circle-image-3.png" alt="Nature 1" />
             </div>
-        </section>
-        <!-- Wisata Section -->
-        <section class="wisata" id="wisata">
-            <div class="container-fluid">
-                <h1 class="title-wisata fw-bold">
-                    Jelajahi Setiap Sudut<br />
-                    di Baturraden
-                </h1>
-                <div class="row justify-content-center g-3">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <div class="gradient-overlay"></div>
-                            <!-- Lapisan gradient -->
-                            <img src="assets/image/alam.png" class="card-img" alt="Pemandian Air" />
-                            <img src="assets/image/icon-alam.png" class="small-img" alt="Icon kecil" />
-                            <div class="card-overlay">
-                                <h3 class="card-title fw-bold">
-                                    <span>Cascade Alam</span>
-                                    <span>Sendang Mulya</span>
-                                </h3>
-                                <p class="card-description">
-                                    <span>Cascade Alam Sendang Mulya berlokasi tidak jauh
-                                    </span>
-                                    <span>dari Curug Gumawang. Di area ini, kamu akan </span>
-                                    <span>menjumpai air mancur yang menyembur tinggi </span>
-                                    <span>hingga 35 meter dari sebuah kolam kecil.</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <div class="gradient-overlay"></div>
-                            <!-- Lapisan gradient -->
-                            <img src="assets/image/pemandian.png" class="card-img" alt="Pemandian Air" />
-                            <img src="assets/image/icon-pemandian.png" class="small-img" alt="Icon kecil" />
-                            <div class="card-overlay">
-                                <h3 class="card-title fw-bold">
-                                    <span>Pemandian Air</span>
-                                    <span>Hangat Belerang</span>
-                                </h3>
-                                <p class="card-description">
-                                    <span>Terdapat tiga kolam air panas dengan posisi paling</span>
-                                    <span>ujung bersuhu paling panas. Satu kolam hanya bisa
-                                    </span>
-                                    <span>diisi oleh maksimal 15 orang dengan durasi </span>
-                                    <span>maksimal 15 menit.</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <div class="gradient-overlay"></div>
-                            <!-- Lapisan gradient -->
-                            <img src="assets/image/kuliner.png" class="card-img" alt="Pemandian Air" />
-                            <img src="assets/image/icon-kuliner.png" class="small-img" alt="Icon kecil" />
-                            <div class="card-overlay">
-                                <h3 class="card-title fw-bold">
-                                    <span>Kuliner</span>
-                                    <span>Khas Baturraden</span>
-                                </h3>
-                                <p class="card-description">
-                                    <span>Setelah puas menjelajahi keindahan Baturraden, </span>
-                                    <span>kamu pasti butuh energi tambahan. Cobalah </span>
-                                    <span>kuliner khas Baturraden yang tak boleh dilewatkan,
-                                    </span>
-                                    <span>yaitu sate kelinci, mendoan, dll.</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="image-point image-2">
+              <img src="/assets/image/circle-image-4.png" alt="Nature 2" />
             </div>
-        </section>
-        <!-- end wisata -->
-
-        <!-- price -->
-        <section class="desc-price" id="desc-price">
-            <div class="container py-5">
-                <h1 class="title-wisata fw-bold">
-                    Yuk Pesan Tiketmu <br />
-                    Sekarang!
-                </h1>
-                <div class="d-flex justify-content-center align-items-center gap-4 mb-5 header-section">
-                    <div class="operational-hours">
-                        <h5 class="mb-0">Waktu Operasional :</h5>
-                        <h4 class="fw-bold">Buka Setiap Hari</h4>
-                    </div>
-                    <div class="border-start border-2 d-none d-md-block" style="height: 50px"></div>
-                    <div class="operational-hours">
-                        <h5 class="mb-0">Jam Buka :</h5>
-                        <h4 class="fw-bold">07.00 - 17.00 WIB</h4>
-                    </div>
-                </div>
-
-                <!-- Pricing Cards -->
-                <div class="row g-4 justify-content-center">
-                    <!-- Weekdays Card -->
-                    <div class="col-12 col-md-5">
-                        <div class="pricing-card h-auto p-4">
-                            <h5 class="mb-3 fw-bold">
-                                Weekdays <span class="text-muted">(Senin - Jumat)</span>
-                            </h5>
-                            <ul class="custom-list">
-                                <li><strong>Dewasa:</strong> Rp20.000</li>
-                                <li>
-                                    <strong>Lansia (60 tahun ke atas), anak usia 6-12 tahun, dan
-                                        penyandang disabilitas:</strong>
-                                    Rp10.000
-                                    <small class="d-block text-muted">(50% dari harga normal)</small>
-                                </li>
-                                <li><strong>Balita (0-5 tahun):</strong> gratis</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Weekend Card -->
-                    <div class="col-12 col-md-5">
-                        <div class="pricing-card h-auto p-4">
-                            <h5 class="mb-3 fw-bold">
-                                Weekend
-                                <span class="text-muted">(Sabtu, Minggu dan Hari Libur)</span>
-                            </h5>
-                            <ul class="custom-list">
-                                <li><strong>Dewasa:</strong> Rp25.000</li>
-                                <li>
-                                    <strong>Lansia (60 tahun ke atas), anak usia 6-12 tahun, dan
-                                        penyandang disabilitas:</strong>
-                                    Rp12.500
-                                    <small class="d-block text-muted">(50% dari harga normal)</small>
-                                </li>
-                                <li><strong>Balita (0-5 tahun):</strong> gratis</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="image-point image-3">
+              <img src="/assets/image/circle-image-5.png" alt="Nature 3" />
             </div>
-        </section>
-        <!-- end price -->
+            <div class="image-point image-4">
+              <img src="/assets/image/circle-image-1.png" alt="Nature 4" />
+            </div>
+            <div class="image-point image-5">
+              <img src="/assets/image/circle-image-2.png" alt="Nature 5" />
+            </div>
 
-        <!-- cs section -->
-        <section class="costumer-services" id="costumer-services">
-            <div class="container">
-                <div class="row p-0 m-0">
-                    <div class="col-6 d-flex justify-content-center align-items-center">
-                        <img src="assets/image/cs-images.png" alt="cs images">
-                    </div>
-                    <div class="col-6 d-flex justify-content-center align-items-sm-start flex-column">
-                        <h1 class="m-0 p-0 title">
-                            Terdapat Keluhan? Hubungi Customer Service Kami!
-                        </h1>
-                        <div class="message-group d-flex justify-content-center align-items-center mt-3">
-                            <img src="assets/image/messages.png" alt="message icon">
-                            <p class="m-0 p-0">0812-9283-2858</p>
-                        </div>
-                        <div class="sms-group d-flex justify-content-center align-items-center mt-3">
-                            <img src="assets/image/sms.png" alt="sms icon">
-                            <p class="m-0 p-0">help@baturraden.com</p>
-                        </div>
-                    </div>
+            <!-- Center content -->
+            <div class="center-content">
+              <p class="hashtag">
+                ✨ Yuk Mulai <span>#JelajahBaturraden</span> Sekarang!
+              </p>
+              <h1 class="main-heading">
+                Butuh Tempat
+                <span class="animate-text">
+                  <span>Healing?</span>
+                  <span>Santai?</span>
+                  <span>Wisata?</span> </span
+                ><br />
+                Yuk Ke <span class="baturraden-text">Baturraden!</span>
+              </h1>
+              <p class="description">
+                Di Baturraden menyediakan banyak objek wisata yang pastinya seru
+                seru loh!<br />
+                Baturraden juga selalu siap buat temenin kamu dikala bosan!
+              </p>
+              <div class="action-buttons">
+                <button class="btn btn-action1">Peta Wisata Baturraden</button>
+                <button class="btn btn-action">
+                  Booking Tiket
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Wisata Section -->
+      <section class="wisata" id="wisata" >
+        <div class="container-fluid">
+            <h1 class="title-wisata fw-bold">
+                Jelajahi Setiap Sudut<br />
+                di Baturraden
+              </h1>
+          <div class="row justify-content-center g-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <div class="gradient-overlay"></div>
+                <!-- Lapisan gradient -->
+                <img
+                  src="assets/image/alam.png"
+                  class="card-img"
+                  alt="Pemandian Air"
+                />
+                <img
+                  src="assets/image/icon-alam.png"
+                  class="small-img"
+                  alt="Icon kecil"
+                />
+                <div class="card-overlay">
+                  <h3 class="card-title fw-bold">
+                    <span>Cascade Alam</span>
+                    <span>Sendang Mulya</span>
+                  </h3>
+                  <p class="card-description">
+                    <span
+                      >Cascade Alam Sendang Mulya berlokasi tidak jauh
+                    </span>
+                    <span>dari Curug Gumawang. Di area ini, kamu akan </span>
+                    <span>menjumpai air mancur yang menyembur tinggi </span>
+                    <span>hingga 35 meter dari sebuah kolam kecil.</span>
+                  </p>
                 </div>
+              </div>
             </div>
-        </section>
-        <!-- end cs section -->
-
-        <!-- location wisata -->
-        <section class="location-wisata" id="location-wisata">
-            <div class="container">
-                <h3 class="m-0 p-0 text-center mb-5">Lokasi Wisata Baturraden</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15829.91523830468!2d109.20636722728528!3d-7.299978449388172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ff4e95950a913%3A0x14e355314c511c47!2sBaturaden%2C%20Dusun%20III%20Kalipagu%2C%20Ketenger%2C%20Kec.%20Baturaden%2C%20Kabupaten%20Banyumas%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1735881494384!5m2!1sid!2sid"
-                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <div class="gradient-overlay"></div>
+                <!-- Lapisan gradient -->
+                <img
+                  src="assets/image/pemandian.png"
+                  class="card-img"
+                  alt="Pemandian Air"
+                />
+                <img
+                  src="assets/image/icon-pemandian.png"
+                  class="small-img"
+                  alt="Icon kecil"
+                />
+                <div class="card-overlay">
+                  <h3 class="card-title fw-bold">
+                    <span>Pemandian Air</span>
+                    <span>Hangat Belerang</span>
+                  </h3>
+                  <p class="card-description">
+                    <span
+                      >Terdapat tiga kolam air panas dengan posisi paling</span
+                    >
+                    <span
+                      >ujung bersuhu paling panas. Satu kolam hanya bisa
+                    </span>
+                    <span>diisi oleh maksimal 15 orang dengan durasi </span>
+                    <span>maksimal 15 menit.</span>
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
-        <!-- end location wisata -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <div class="gradient-overlay"></div>
+                <!-- Lapisan gradient -->
+                <img
+                  src="assets/image/kuliner.png"
+                  class="card-img"
+                  alt="Pemandian Air"
+                />
+                <img
+                  src="assets/image/icon-kuliner.png"
+                  class="small-img"
+                  alt="Icon kecil"
+                />
+                <div class="card-overlay">
+                  <h3 class="card-title fw-bold">
+                    <span>Kuliner</span>
+                    <span>Khas Baturraden</span>
+                  </h3>
+                  <p class="card-description">
+                    <span>Setelah puas menjelajahi keindahan Baturraden, </span>
+                    <span>kamu pasti butuh energi tambahan. Cobalah </span>
+                    <span
+                      >kuliner khas Baturraden yang tak boleh dilewatkan,
+                    </span>
+                    <span>yaitu sate kelinci, mendoan, dll.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end wisata -->
 
-        <!-- partner wisata -->
-        <section class="partner-wisata" id="partner-wisata">
-            <div class="container">
-                <h5 class="m-0 p-0 text-center">Berikut merupakan <span>Partner</span> yang bekerja sama dengan kami
+      <!-- price -->
+      <section class="desc-price" id="desc-price">
+        <div class="container py-5">
+          <h1 class="title-wisata fw-bold">
+            Yuk Pesan Tiketmu <br />
+            Sekarang!
+          </h1>
+          <div
+            class="d-flex justify-content-center align-items-center gap-4 mb-5 header-section"
+          >
+            <div class="operational-hours">
+              <h5 class="mb-0">Waktu Operasional :</h5>
+              <h4 class="fw-bold">Buka Setiap Hari</h4>
+            </div>
+            <div
+              class="border-start border-2 d-none d-md-block"
+              style="height: 50px"
+            ></div>
+            <div class="operational-hours">
+              <h5 class="mb-0">Jam Buka :</h5>
+              <h4 class="fw-bold">07.00 - 17.00 WIB</h4>
+            </div>
+          </div>
+
+          <!-- Pricing Cards -->
+          <div class="row g-4 justify-content-center">
+            <!-- Weekdays Card -->
+            <div class="col-12 col-md-5">
+              <div class="pricing-card h-auto p-4">
+                <h5 class="mb-3 fw-bold">
+                  Weekdays <span class="text-muted">(Senin - Jumat)</span>
                 </h5>
-                <div class="image-group-partner d-flex justify-content-around align-items-center mt-5">
-                    <img src="assets/image/partner/kominfo-banyumas.png" alt="" srcset="">
-                    <img src="assets/image/partner/banyumas-logo.png" alt="banyumas logo">
-                    <img src="assets/image/partner/pesona-indonesia.png" alt="pesona indonesia">
-                    <img src="assets/image/partner/etter-banyumas.png" alt="etter banyumas">
-                    <img src="assets/image/partner/banyumas-ngangeni.png" alt="banyums ngangeni">
-                </div>
+                <ul class="custom-list">
+                  <li><strong>Dewasa:</strong> Rp20.000</li>
+                  <li>
+                    <strong
+                      >Lansia (60 tahun ke atas), anak usia 6-12 tahun, dan
+                      penyandang disabilitas:</strong
+                    >
+                    Rp10.000
+                    <small class="d-block text-muted"
+                      >(50% dari harga normal)</small
+                    >
+                  </li>
+                  <li><strong>Balita (0-5 tahun):</strong> gratis</li>
+                </ul>
+              </div>
             </div>
-        </section>
-        <!-- end partner wisata -->
 
-        <!-- section penutup -->
-        <section class="end-section" id="end-section">
-            <div class="container">
-                <div class="flex-box ">
-                    <div class="row">
-                        <div class="col-5 ">
-                            <img src="assets/image/images-end.png" class="img-fluid" alt="images end">
-                            <img src="assets/image/style-2-end.png" alt="style 2 end">
-                        </div>
-                        <div class="col-7 d-flex justify-content-start flex-column">
-                            <div class="baturaden-group d-flex justify-content-start ">
-                                <img src="assets/image/icon-baturaden-2.png" alt="logo baturaden">
-                                <p class="m-0 p-0 ps-2">Baturraden</p>
-                            </div>
-                            <h1 class="m-0 p-0 mt-3">Tunggu Apa Lagi? Yuk Mulai Berwisata Ke Baturraden!</h1>
-                            <a href="#" class="btn mt-3">
-                                Mulai Sekarang
-                                <img src="assets/image/arrow-right.png" alt="arrow right">
-                            </a>
-
-                            <img src="assets/image/style-1-end.png" alt="style 1 end" class="style-img-1">
-                        </div>
-                    </div>
-                </div>
+            <!-- Weekend Card -->
+            <div class="col-12 col-md-5">
+              <div class="pricing-card h-auto p-4">
+                <h5 class="mb-3 fw-bold">
+                  Weekend
+                  <span class="text-muted">(Sabtu, Minggu dan Hari Libur)</span>
+                </h5>
+                <ul class="custom-list">
+                  <li><strong>Dewasa:</strong> Rp25.000</li>
+                  <li>
+                    <strong
+                      >Lansia (60 tahun ke atas), anak usia 6-12 tahun, dan
+                      penyandang disabilitas:</strong
+                    >
+                    Rp12.500
+                    <small class="d-block text-muted"
+                      >(50% dari harga normal)</small
+                    >
+                  </li>
+                  <li><strong>Balita (0-5 tahun):</strong> gratis</li>
+                </ul>
+              </div>
             </div>
-        </section>
-        <!-- end section penutup -->
+          </div>
+        </div>
+      </section>
+      <!-- end price -->
 
-        <section class="section-arrow-back" id="section-arrow-back">
-            <div class="container d-flex">
-                <div class="arrow-back">
-                    <a href="#top">
-                        <img src="assets/image/arrow-back.png" alt="arrow back">
-                    </a>
-                </div>
+      <!-- cs section -->
+      <section class="costumer-services" id="costumer-services">
+        <div class="container">
+          <div class="row p-0 m-0">
+            <div class="col-6 d-flex justify-content-center align-items-center">
+              <img src="assets/image/cs-images.png" alt="cs images" />
             </div>
-        </section>
+            <div
+              class="col-6 d-flex justify-content-center align-items-sm-start flex-column"
+            >
+              <h1 class="m-0 p-0 title">
+                Terdapat Keluhan? Hubungi Customer Service Kami!
+              </h1>
+              <div
+                class="message-group d-flex justify-content-center align-items-center mt-3"
+              >
+                <img src="assets/image/messages.png" alt="message icon" />
+                <p class="m-0 p-0">0812-9283-2858</p>
+              </div>
+              <div
+                class="sms-group d-flex justify-content-center align-items-center mt-3"
+              >
+                <img src="assets/image/sms.png" alt="sms icon" />
+                <p class="m-0 p-0">help@baturraden.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end cs section -->
 
+      <!-- location wisata -->
+      <section class="location-wisata" id="location-wisata">
+        <div class="container">
+          <h3 class="m-0 p-0 text-center mb-5">Lokasi Wisata Baturraden</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15829.91523830468!2d109.20636722728528!3d-7.299978449388172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ff4e95950a913%3A0x14e355314c511c47!2sBaturaden%2C%20Dusun%20III%20Kalipagu%2C%20Ketenger%2C%20Kec.%20Baturaden%2C%20Kabupaten%20Banyumas%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1735881494384!5m2!1sid!2sid"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </section>
+      <!-- end location wisata -->
+
+      <!-- partner wisata -->
+      <section class="partner-wisata" id="partner-wisata">
+        <div class="container">
+          <h5 class="m-0 p-0 text-center">
+            Berikut merupakan <span>Partner</span> yang bekerja sama dengan kami
+          </h5>
+          <div
+            class="image-group-partner d-flex justify-content-around align-items-center mt-5"
+          >
+            <img
+              src="assets/image/partner/kominfo-banyumas.png"
+              alt=""
+              srcset=""
+            />
+            <img
+              src="assets/image/partner/banyumas-logo.png"
+              alt="banyumas logo"
+            />
+            <img
+              src="assets/image/partner/pesona-indonesia.png"
+              alt="pesona indonesia"
+            />
+            <img
+              src="assets/image/partner/etter-banyumas.png"
+              alt="etter banyumas"
+            />
+            <img
+              src="assets/image/partner/banyumas-ngangeni.png"
+              alt="banyums ngangeni"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- end partner wisata -->
+
+      <!-- section penutup -->
+      <section class="end-section" id="end-section">
+        <div class="container">
+          <div class="flex-box">
+            <div class="row">
+              <div class="col-5">
+                <img
+                  src="assets/image/images-end.png"
+                  class="img-fluid"
+                  alt="images end"
+                />
+                <img src="assets/image/style-2-end.png" alt="style 2 end" />
+              </div>
+              <div class="col-7 d-flex justify-content-start flex-column">
+                <div class="baturaden-group d-flex justify-content-start">
+                  <img
+                    src="assets/image/icon-baturaden-2.png"
+                    alt="logo baturaden"
+                  />
+                  <p class="m-0 p-0 ps-2">Baturraden</p>
+                </div>
+                <h1 class="m-0 p-0 mt-3">
+                  Tunggu Apa Lagi? Yuk Mulai Berwisata Ke Baturraden!
+                </h1>
+                <a href="#" class="btn mt-3">
+                  Mulai Sekarang
+                  <img src="assets/image/arrow-right.png" alt="arrow right" />
+                </a>
+
+                <img
+                  src="assets/image/style-1-end.png"
+                  alt="style 1 end"
+                  class="style-img-1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section penutup -->
+
+      <section class="section-arrow-back" id="section-arrow-back">
+        <a
+          href="#"
+          class="btn btn-lg btn-lg-square rounded-circle back-to-top btn-up"
+          ><i class="bi bi-arrow-up"></i
+        ></a>
+      </section>
     </main>
 
     <!-- Footer Section -->
     <footer>
-        <div class="container">
-            <div class="row p-0 m-0">
-                <div class="col-lg-4 first-col p-0 ">
-                    <div class="image-content d-flex justify-content-start align-items-center text-center">
-                        <img src="assets/image/icon-baturaden.png" alt="" srcset="">
-                        <h4 class="p-0 m-0 ms-2 title">Baturraden</h4>
-                    </div>
-                    <p class="subtitle p-0 m-0 mt-3">Merupakan Wisata Alam yang berlokasi
-                        di Bawah Lereng Gunung Slamet yang
-                        menyajikan tempat yang sejuk dan asri
-                    </p>
+      <div class="container">
+        <div class="row p-0 m-0">
+          <div class="col-lg-4 first-col p-0">
+            <div
+              class="image-content d-flex justify-content-start align-items-center text-center"
+            >
+              <img src="assets/image/icon-baturaden.png" alt="" srcset="" />
+              <h4 class="p-0 m-0 ms-2 title">Baturraden</h4>
+            </div>
+            <p class="subtitle p-0 m-0 mt-3">
+              Merupakan Wisata Alam yang berlokasi di Bawah Lereng Gunung Slamet
+              yang menyajikan tempat yang sejuk dan asri
+            </p>
 
-                    <div class="social-media-group mt-5">
-                        <div class="row p-0 m-0">
-                            <div class="col-lg-2 p-0 google-link">
-                                <a href="#" class="svg-link">
-                                    <img src="assets/image/social-media/google.png" alt="google icon"
-                                        class="responsive-img">
-                                </a>
-                            </div>
-                            <div class="col-lg-2 p-0 whatsapp-link">
-                                <a href="#" class="svg-link">
-                                    <img src="assets/image/social-media/whatsapp.png" alt="whatsapp icon"
-                                        class="responsive-img">
-                                </a>
-                            </div>
-                            <div class="col-lg-2 p-0 instagram-link">
-                                <a href="#" class="svg-link">
-                                    <img src="assets/image/social-media/instagram.png" alt="instagram icon"
-                                        class="responsive-img">
-                                </a>
-                            </div>
-                            <div class="col-lg-2 p-0 facebook-link">
-                                <a href="#" class="svg-link">
-                                    <img src="assets/image/social-media/facebook.png" alt="facebook icon"
-                                        class="responsive-img">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="social-media-group mt-5">
+              <div class="row p-0 m-0">
+                <div class="col-lg-2 p-0 google-link">
+                  <a href="#" class="svg-link">
+                    <img
+                      src="assets/image/social-media/google.png"
+                      alt="google icon"
+                      class="responsive-img"
+                    />
+                  </a>
                 </div>
-                <div class="col-lg-2 two-col p-0 ">
-                    <h4 class="p-0 m-0 title">Home</h4>
-                    <div class="content mt-3">
-                        <p class="m-0 p-0">Wisata</p>
-                        <p class="m-0 p-0 mt-2">Booking Tiket</p>
-                    </div>
+                <div class="col-lg-2 p-0 whatsapp-link">
+                  <a href="#" class="svg-link">
+                    <img
+                      src="assets/image/social-media/whatsapp.png"
+                      alt="whatsapp icon"
+                      class="responsive-img"
+                    />
+                  </a>
                 </div>
-                <div class="col-lg-2 three-col p-0 ">
-                    <h4 class="p-0 m-0 title">Download</h4>
-                    <div class="content mt-3">
-                        <p class="m-0 p-0">Peta Wisata</p>
-                    </div>
+                <div class="col-lg-2 p-0 instagram-link">
+                  <a href="#" class="svg-link">
+                    <img
+                      src="assets/image/social-media/instagram.png"
+                      alt="instagram icon"
+                      class="responsive-img"
+                    />
+                  </a>
                 </div>
-                <div class="col-lg-2 four-col p-0 ">
-                    <h4 class="p-0 m-0 title">Support</h4>
-                    <div class="content mt-3">
-                        <p class="m-0 p-0 ">Telephone</p>
-                        <p class="m-0 p-0 mt-2">Email</p>
-                        <p class="m-0 p-0 mt-2">Whatsapp</p>
-                    </div>
+                <div class="col-lg-2 p-0 facebook-link">
+                  <a href="#" class="svg-link">
+                    <img
+                      src="assets/image/social-media/facebook.png"
+                      alt="facebook icon"
+                      class="responsive-img"
+                    />
+                  </a>
                 </div>
-                <div class="col-lg-2 five-col p-0 ">
-                    <h4 class="p-0 m-0 title">About</h4>
-                    <div class="content mt-3">
-                        <p class="m-0 p-0">About Us</p>
-                    </div>
-                </div>
+              </div>
             </div>
-            <hr class="custom-hr">
-            <div class="copyright d-flex justify-content-between align-content-center">
-                <p class="m-0 p-0">
-                    ©
-                    <span>
-                        Agritech Telkom
-                    </span>
-                    2024, All right reserved
-                </p>
-                <div class="href-group ">
-                    <a href="#" class="ms-4">Home</a>
-                    <a href="#" class="ms-4">Wisata</a>
-                    <a href="#" class="ms-4">Penginapan</a>
-                    <a href="#" class="ms-4">Bantuan</a>
-                </div>
+          </div>
+          <div class="col-lg-2 two-col p-0">
+            <h4 class="p-0 m-0 title">Home</h4>
+            <div class="content mt-3">
+              <p class="m-0 p-0">Wisata</p>
+              <p class="m-0 p-0 mt-2">Booking Tiket</p>
             </div>
+          </div>
+          <div class="col-lg-2 three-col p-0">
+            <h4 class="p-0 m-0 title">Download</h4>
+            <div class="content mt-3">
+              <p class="m-0 p-0">Peta Wisata</p>
+            </div>
+          </div>
+          <div class="col-lg-2 four-col p-0">
+            <h4 class="p-0 m-0 title">Support</h4>
+            <div class="content mt-3">
+              <p class="m-0 p-0">Telephone</p>
+              <p class="m-0 p-0 mt-2">Email</p>
+              <p class="m-0 p-0 mt-2">Whatsapp</p>
+            </div>
+          </div>
+          <div class="col-lg-2 five-col p-0">
+            <h4 class="p-0 m-0 title">About</h4>
+            <div class="content mt-3">
+              <p class="m-0 p-0">About Us</p>
+            </div>
+          </div>
         </div>
+        <hr class="custom-hr" />
+        <div
+          class="copyright d-flex justify-content-between align-content-center"
+        >
+          <p class="m-0 p-0">
+            ©
+            <span> Agritech Telkom </span>
+            2024, All right reserved
+          </p>
+          <div class="href-group">
+            <a href="#" class="ms-4">Home</a>
+            <a href="#" class="ms-4">Wisata</a>
+            <a href="#" class="ms-4">Penginapan</a>
+            <a href="#" class="ms-4">Bantuan</a>
+          </div>
+        </div>
+      </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="assets/script.js"></script>
-</body>
-
+  </body>
 </html>
